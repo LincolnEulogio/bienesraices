@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link rel="stylesheet" href="./build/css/app.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__contenido contenedor">
+            <div class="header__barra">
+                <a href="/">
+                    <img src="./build/img/logo.svg" alt="logo">
+                </a>
+                <div class="mobile__menu">
+                    <img src="./build/img/barras.svg" alt="icono menu responsive">
+                </div>
+                
+                <nav class="header__nav">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                    <img src="./build/img/moon.png" alt="modo" class="dark-mode-boton">
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="contenedor seccion">
+        <h1 class="nosotros__titulo">Conoce Sobre Nosotros</h1>
+        <div class="nosotros__content">
+            <div class="nosotros__imagen">
+                <picture>
+                    <source srcset="./build/img/nosotros.webp" type="image/webp">
+                    <source srcset="./build/img/nosotros.jpg" type="image/jpeg">
+                    <img src="./build/img/nosotros.jpg" alt="imagen entrada blog" loading="lazy">
+                </picture>
+            </div>
+            <div class="nosotros__texto">
+                <blockquote>25 años de experiencia</blockquote>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fugiat placeat laudantium debitis corrupti? Ea nostrum animi possimus doloremque tenetur est numquam quia, consectetur optio quas, molestias, explicabo illum dolorum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illo autem, animi ipsa sint nisi nulla illum totam voluptatem corporis sequi in iste soluta veritatis eum ad numquam omnis nemo?</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="contenedor seccion nosotros">
+        <h1 class="nosotros__titulo">Sobre Nosotros</h1>
+        <div class="nosotros__iconos">
+            <div class="nosotros__icono">
+                <img src="./build/img/icono1.svg" alt="icono seguridad" loading="lazy">
+                <h3>Seguridad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quidem nesciunt nostrum recusandae beatae excepturi eveniet reprehenderit impedit debitis sed temporibus maiores corrupti? Maiores delectus accusamus, vel culpa temporibus possimus?</p>
+            </div>
+            <div class="nosotros__icono">
+                <img src="./build/img/icono2.svg" alt="icono precio" loading="lazy">
+                <h3>Precio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sit qui et sequi autem. Quae optio nam perspiciatisLorem ipsum dolor eprehenderit impedit debitis sed temporibus maiores corrupti? Maiores delectus accusamus, vel culpa temporibus possimus?</p>
+            </div>
+            <div class="nosotros__icono">
+                <img src="./build/img/icono3.svg" alt="icono tiempo" loading="lazy">
+                <h3>Tiempo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sit qui et sequi autem. Quae optio nam perspiciatisLorem ipsum dolor sit eprehenderit impedit debitis sed temporibus maiores corrupti? Maiores delectus accusamus, vel culpa temporibus possimus?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer seccion">
+        <div class="contenedor footer__contenido">
+            <nav class="footer__nav">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <p class="footer__copyright">Todos los derechos reservados - &copy; 2023</p>
+        </div>
+    </footer>
+
+    <script src="./build/js/modernizr.js"></script>
+    <script src="./build/js/app.js"></script>
+</body>
+</html>

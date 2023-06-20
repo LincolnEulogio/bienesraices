@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link rel="stylesheet" href="./build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__contenido contenedor">
+            <div class="header__barra">
+                <a href="/">
+                    <img src="./build/img/logo.svg" alt="logo">
+                </a>
+                <div class="mobile__menu">
+                    <img src="./build/img/barras.svg" alt="icono menu responsive">
+                </div>
+                
+                <nav class="header__nav">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                    <img src="./build/img/moon.png" alt="modo" class="dark-mode-boton">
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main class="contenedor seccion contenido-centrado">
+        <h1>Contactanos</h1>
+        <picture>
+            <source srcset="./build/img/destacada3.webp" type="image/webp">
+            <source srcset="./build/img/destacada3.jpg" type="image/jpeg">
+            <img src="./build/img/destacada3.jpg" alt="imagen entrada blog" loading="lazy">
+        </picture>
+        <h2>Llene el formulario de contacto</h2>
+        <form action="" class="formulario">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre <span>*</span></label>
+                <input type="text" id="nombre">
+
+                <label for="email">Correo Electrónico <span>*</span></label>
+                <input type="email" id="email">
+
+                <label for="telefono">Teléfono <span>*</span></label>
+                <input type="tel" id="telefono">
+
+                <label for="mensaje">Mensaje <span>*</span></label>
+                <textarea id="mensaje"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información de la Propiedad</legend>
+                <label for="opciones">Vende o Compra <span>*</span></label>
+                <select id="opciones">
+                    <option value="" selected disabled>Seleccione una opcion</option>
+                    <option value="Compra">Compra</option>
+                    <option value="Vende">Vende</option>
+                </select>
+
+                <label for="precio">Precio o Presupuesto <span>*</span></label>
+                <input type="number" id="precio">
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>¿ Como desea ser contactado ?</p>
+                <div class="formulario__contacto">
+                    <label for="phone">Teléfono</label>
+                    <input type="radio" name="contacto" id="phone" value="Teléfono">
+
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="radio" name="contacto" id="correo" value="Correo Electrónico">
+                </div>
+
+                <p>Si eligió telefono elija la fecha y hora</p>
+                    <label for="fecha">Fecha <span>*</span></label>
+                    <input type="date" id="fecha">
+
+                    <label for="hora">Hora <span>*</span></label>
+                    <input type="time" id="hora" min="09:00" max="18:00">
+            </fieldset>
+
+            <input type="submit" value="Enviar formulario" class="btn__verde formulario__btn">
+        </form>
+    </main>
+
+    <footer class="footer seccion">
+        <div class="contenedor footer__contenido">
+            <nav class="footer__nav">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <p class="footer__copyright">Todos los derechos reservados - &copy; 2023</p>
+        </div>
+    </footer>
+
+    <script src="./build/js/modernizr.js"></script>
+    <script src="./build/js/app.js"></script>
+</body>
+</html>
